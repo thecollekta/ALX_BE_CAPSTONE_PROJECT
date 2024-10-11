@@ -188,7 +188,7 @@ Below a step-by-step guide on how to test the **Library Management System API** 
    "author": "Festus Aboagye",
    "isbn": "8732305902233",
    "published_date": "2024-01-24",
-   "copies_available": 2
+   "available_copies": 2
   }
 
 - **Response** (JSON):
@@ -200,7 +200,7 @@ Below a step-by-step guide on how to test the **Library Management System API** 
    "author": "Festus Aboagye",
    "isbn": "8732305902233",
    "published_date": "2024-01-24",
-   "copies_available": 2
+   "available_copies": 2
   }
 ```
 
@@ -226,7 +226,7 @@ Below a step-by-step guide on how to test the **Library Management System API** 
    "author": "Festus Aboagye",
    "isbn": "8732305902233",
    "published_date": "2024-01-24",
-   "copies_available": 2
+   "available_copies": 2
   }
 ```
 

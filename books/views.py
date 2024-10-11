@@ -173,7 +173,7 @@ class BookViewSet(viewsets.ModelViewSet):
         transaction.return_date = timezone.now()
         transaction.save()
 
-        book.copies_available += 1
+        book.available_copies += 1
         book.save()
 
         return Response(TransactionSerializer(transaction).data, status=status.HTTP_200_OK)
@@ -183,6 +183,6 @@ class BookViewSet(viewsets.ModelViewSet):
         """
         List all the books with available copies.
         """
-        books = Book.objects.filter(copies_available__gt=0)
+        books = Book.objects.filter(available_copies__gt=0)
         serializer = self.get_serializer(books, many=True)
         return Response(serializer.data)

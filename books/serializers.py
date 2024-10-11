@@ -45,7 +45,7 @@ class BookSerializer(serializers.ModelSerializer):
                     "format": "date",
                     "description": "The publication date of the book"
                 },
-                "copies_available": {
+                "available_copies": {
                     "type": "integer",
                     "minimum": 0,
                     "description": "The number of copies available for checkout"

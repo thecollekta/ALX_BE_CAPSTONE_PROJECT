@@ -17,7 +17,7 @@ class TransactionModelTest(TestCase):
             author="Test Author",
             isbn="1234567890123",
             published_date=timezone.now(),
-            copies_available=5
+            available_copies=5
         )
         self.transaction = Transaction.objects.create(
             user=self.user,
